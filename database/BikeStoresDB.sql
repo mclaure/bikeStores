@@ -240,7 +240,7 @@ PRINT N'Creating [dbo].[DF_brands_rowguid]...';
 
 GO
 ALTER TABLE [dbo].[brands]
-    ADD CONSTRAINT [DF_brands_rowguid] DEFAULT NEWID() FOR [rowguid];
+    ADD CONSTRAINT [DF_brands_rowguid] DEFAULT (newsequentialid()) FOR [rowguid];
 
 
 GO
@@ -249,7 +249,7 @@ PRINT N'Creating [dbo].[DF_categories_rowguid]...';
 
 GO
 ALTER TABLE [dbo].[categories]
-    ADD CONSTRAINT [DF_categories_rowguid] DEFAULT NEWID() FOR [rowguid];
+    ADD CONSTRAINT [DF_categories_rowguid] DEFAULT (newsequentialid()) FOR [rowguid];
 
 
 GO
@@ -258,7 +258,7 @@ PRINT N'Creating [dbo].[DF_customers_rowguid]...';
 
 GO
 ALTER TABLE [dbo].[customers]
-    ADD CONSTRAINT [DF_customers_rowguid] DEFAULT NEWID() FOR [rowguid];
+    ADD CONSTRAINT [DF_customers_rowguid] DEFAULT (newsequentialid()) FOR [rowguid];
 
 
 GO
@@ -267,7 +267,7 @@ PRINT N'Creating [dbo].[DF_products_rowguid]...';
 
 GO
 ALTER TABLE [dbo].[products]
-    ADD CONSTRAINT [DF_products_rowguid] DEFAULT NEWID() FOR [rowguid];
+    ADD CONSTRAINT [DF_products_rowguid] DEFAULT (newsequentialid()) FOR [rowguid];
 
 
 GO
@@ -276,7 +276,7 @@ PRINT N'Creating [dbo].[DF_staffs_rowguid]...';
 
 GO
 ALTER TABLE [dbo].[staffs]
-    ADD CONSTRAINT [DF_staffs_rowguid] DEFAULT NEWID() FOR [rowguid];
+    ADD CONSTRAINT [DF_staffs_rowguid] DEFAULT (newsequentialid()) FOR [rowguid];
 
 
 GO
@@ -285,7 +285,7 @@ PRINT N'Creating [dbo].[DF_stocks_rowguid]...';
 
 GO
 ALTER TABLE [dbo].[stocks]
-    ADD CONSTRAINT [DF_stocks_rowguid] DEFAULT NEWID() FOR [rowguid];
+    ADD CONSTRAINT [DF_stocks_rowguid] DEFAULT (newsequentialid()) FOR [rowguid];
 
 
 GO
@@ -294,7 +294,7 @@ PRINT N'Creating [dbo].[DF_stores_rowguid]...';
 
 GO
 ALTER TABLE [dbo].[stores]
-    ADD CONSTRAINT [DF_stores_rowguid] DEFAULT NEWID() FOR [rowguid];
+    ADD CONSTRAINT [DF_stores_rowguid] DEFAULT (newsequentialid()) FOR [rowguid];
 
 
 GO
