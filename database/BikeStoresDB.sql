@@ -311,6 +311,7 @@ GO
 CREATE PROCEDURE [dbo].[sp_InsertOrGetBrandName]
 (
 	@brandName VARCHAR(255)
+   ,@flag BIT =0
 )
 AS
 BEGIN
