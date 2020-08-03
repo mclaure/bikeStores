@@ -306,6 +306,7 @@ GO
  Procedure Name: [dbo].[sp_InsertOrGetBrandName]
  Inserts a new Brand name and returns the recently created Id
  If the brand already exists, returns the existing Id
+ Author: Marcelo Claure
 */
 CREATE PROCEDURE [dbo].[sp_InsertOrGetBrandName]
 (
