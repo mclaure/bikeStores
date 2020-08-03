@@ -93,6 +93,7 @@ GO
 CREATE TABLE [dbo].[brands] (
     [brand_id]   INT              IDENTITY (1, 1) NOT FOR REPLICATION NOT NULL,
     [brand_name] VARCHAR (255)    NOT NULL,
+	[brand_category] VARCHAR(50) NOT NULL,
     [rowguid]    UNIQUEIDENTIFIER ROWGUIDCOL NOT NULL,
     CONSTRAINT [PK_brands] PRIMARY KEY CLUSTERED ([brand_id] ASC)
 );
@@ -241,6 +242,12 @@ PRINT N'Creating [dbo].[DF_brands_rowguid]...';
 GO
 ALTER TABLE [dbo].[brands]
     ADD CONSTRAINT [DF_brands_rowguid] DEFAULT (newsequentialid()) FOR [rowguid];
+
+
+GO
+
+ALTER TABLE [dbo].[brands]
+    ADD CONSTRAINT [DF_brands_brand_category] DEFAULT ('None') FOR [brand_category];
 
 
 GO
