@@ -2,7 +2,7 @@
 ```
 Sample SQL Server database using Visual Studio SQL Server project
 ```
-![Test-pyramid4](https://user-images.githubusercontent.com/24611413/67218799-fcc74b80-f3f4-11e9-97d7-f16f9e4c502e.jpg)
+![SQL-Server-Sample-Database](https://user-images.githubusercontent.com/24611413/89333983-d01eb080-d663-11ea-83d5-d4e1c9d579ab.png)
 
 ## Installing the project
 ```
