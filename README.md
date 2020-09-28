@@ -8,7 +8,7 @@ Sample SQL Server database using Visual Studio SQL Server project
 ```
 - Download the code
 - Go to folder /database
-- Run the "BikeStoresDB.sql" in a database called "BikeStores"
+- Run the "BikeStoresDB.sql" in a database with the name "BikeStores"
 ```
 ## Database Diagram
 
